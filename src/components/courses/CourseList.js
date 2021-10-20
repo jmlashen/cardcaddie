@@ -1,0 +1,36 @@
+import { CourseCard } from "./CoursesCard";
+import React, { useEffect, useState } from "react";
+import { GetAllCourses } from "../modules/CoursesDataManager";
+
+
+
+export const CourseList = () => {
+
+    const [courses, setCourses] = useState([]);
+    const GetCourses = () => {
+        return GetAllCourses().then(coursesFromAPI => {
+
+            console.log(coursesFromAPI);
+            setCourses(coursesFromAPI)
+
+        });
+    };
+
+    
+    useEffect(() => {
+        GetCourses();
+    }, []);
+
+
+    return (
+        <div className="container-cards">
+          {courses.map(course =>
+            <CourseCard
+              key={course.id}
+              course={course}
+               />)}
+        </div>
+      );
+          }
+
+          

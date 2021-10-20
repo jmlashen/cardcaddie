@@ -1,0 +1,28 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Jake Lashenik",
+      "email": "jake@me.com"
+    }
+  ],
+  "rounds": [],
+  "courses": [
+    {
+      "id": 1,
+      "name": "Two Rivers",
+      "image": "TwoRivers.jpeg",
+      "url": "https://www.nashville.gov/departments/parks/golf-courses/two-rivers-golf-course",
+      "description": "Municipal Public Course",
+      "userId": 1
+    },
+    {
+      "id": 2,
+      "name": "Twelve Stones",
+      "image": "TwelveStones.jpg",
+      "url": "https://www.nashville.gov/departments/parks/golf-courses/two-rivers-golf-course",
+      "description": "Public Course",
+      "userId": 1
+    }
+  ]
+}
