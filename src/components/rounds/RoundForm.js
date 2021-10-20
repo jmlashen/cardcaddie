@@ -46,23 +46,6 @@ export const RoundForm = () => {
                     <input className="form-control-date" size="100" type="date" id="roundDate" onChange={handleControlleInputChange} placeholder="Round Date" value={round.round_date} />
                 </div>
 
-                {/* <div className="form-group">
-                <label htmlFor="course">Course: </label>
-                <select value={round.courseId} name="courseId" id="courseId" onChange={handleControlleInputChange} className="form-control" >
-                    <option value="0">Select a Course</option>
-                    {round.map(course => (
-                        <option key={course.id} value={course.id}>
-                            {course.name}
-                        </option>
-                    ))}
-                </select>
-            </div> */}
-
-                {/* <div className="">
-                    <label htmlFor="course">Course:</label>
-                    <input size="100" type="text" id="course" onChange={handleControlleInputChange} placeholder="Course" value={round.course} />
-                </div> */}
-
                 <div className="">
                     <label htmlFor="score"></label>
                     <input className="form-control-score" size="100" type="text" id="score" onChange={handleControlleInputChange} placeholder="Score" value={round.score} />
@@ -77,7 +60,7 @@ export const RoundForm = () => {
                     onClick={handleClickSaveRound}>
                     Save
                 </button>
-           
+                
                 <button className=""
                     onClick={handleCancelButton}>
                     Cancel

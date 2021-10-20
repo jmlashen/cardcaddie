@@ -31,10 +31,12 @@ export const RoundList = () => {
 
     return (
         <>
+        <div className="round-header">
+                    <h1>Rounds</h1>
+        </div>
             <section className="">
 
-                <div className="">
-                    <h1>Rounds</h1>
+                <div>
                     <div className="new-round-button-container">
                         <button className="new-round-button" type="button"
                             onClick={() => { history.push("/create") }}>
@@ -44,7 +46,7 @@ export const RoundList = () => {
                 </div>
 
                 <section className="">
-                    <div className="">
+                    <div className="round-cards-container">
                         {rounds.map(round => <RoundCard round={round} key={round.id} handleDeleteRound={handleDeleteRound} />)}
                     </div>
                 </section>

@@ -23,6 +23,11 @@ export const CourseList = () => {
 
 
     return (
+        <>
+        <div className="course-header">
+            <h1>Courses</h1>
+            </div>
+        
         <div className="container-cards">
           {courses.map(course =>
             <CourseCard
@@ -30,6 +35,7 @@ export const CourseList = () => {
               course={course}
                />)}
         </div>
+        </>
       );
           }
 
