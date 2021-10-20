@@ -1,3 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Fugaz+One&family=Righteous&display=swap');
+
 img {
     width: 195px;
 }
+.course {
+    display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	width: 70%;
+	
+    margin: .5em;
+	max-width: 300px;
+	background-image: linear-gradient( #BB8BB9
+	,#BFD9C0);
+    border: white;
+    border-radius: 10px;
+    border-style: solid;
+    text-align: center;
+    
+    
+}
+
+.container-cards {
+    display: flex;
+    border-radius: 1px;
+    margin-top: 20px;
+    min-height: 500px;
+    flex-wrap: wrap;
+    margin-left: 150px
+
+}
+
+.course-header {
+    display: flex;
+    justify-content: center;
+    font-size: xx-large;
+    font-family: 'Fugaz One', cursive;
+    
+}
+

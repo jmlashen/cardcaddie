@@ -9,20 +9,21 @@ export const RoundCard = ({ round, handleDeleteRound }) => {
 
     return (
         <>
-
-            <div className="">
-                <section className="">
-                    <h4>{round.roundDate}</h4>
-                    <h3>Score: {round.score}</h3>
-                    <h3>Round Reflection: {round.reflection}</h3>
-                    <button className="" onClick={() => handleDeleteRound(round.id)}>Delete</button>
+        <div>
+        <section className="round-cards">
+            <div className="round-card-width">
+                    <h5>{round.roundDate}</h5>
+                    <h5>Score: {round.score}</h5>
+                    <h5>Round Reflection: {round.reflection}</h5>
                     <button className="" type="button"
                         onClick={() => history.push(`/${round.id}/edit`)}>
                         Edit
                     </button>
-                </section>
-                <hr></hr>
+                    <button className="" onClick={() => handleDeleteRound(round.id)}>Delete</button>
+                    
             </div>
+        </section>
+        </div>
         </>
     )
 }
