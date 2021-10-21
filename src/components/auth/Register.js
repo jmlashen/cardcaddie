@@ -17,7 +17,6 @@ export const Register = ({ setAuthUser }) => {
     }
 
     const existingUserCheck = () => {
-        // If your json-server URL is different, please change it below!
         return fetch(`http://localhost:8088/users?email=${registerUser.email}`)
             .then(res => res.json())
             .then(user => !!user.length)
@@ -33,7 +32,6 @@ export const Register = ({ setAuthUser }) => {
         existingUserCheck()
             .then((userExists) => {
                 if (!userExists) {
-                    // If your json-server URL is different, please change it below!
                     fetch("http://localhost:8088/users", {
                         method: "POST",
                         headers: {
@@ -47,7 +45,6 @@ export const Register = ({ setAuthUser }) => {
                         .then(res => res.json())
                         .then(createdUser => {
                             if (createdUser.hasOwnProperty("id")) {
-                                // The user id is saved under the key nutshell_user in session Storage. Change below if needed!
                                 setAuthUser(createdUser)
                                 history.push("/")
                             }

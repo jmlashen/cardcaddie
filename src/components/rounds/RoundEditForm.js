@@ -12,6 +12,11 @@ export const RoundEditForm = () => {
     const { roundId } = useParams()
     const history = useHistory()
     const [courses, setCourses] = useState([])
+    // USESTATE: useState is a Hook that allows you to have state variables in 
+    // functional components. You pass the initial state to the
+    // function and it returns a variable with the current state value 
+    // (not necessarily the initial state) and another function 
+    // to update this value.
 
     const handleFieldChange = event => {
         const stateToChange = { ...round }
