@@ -44,6 +44,21 @@
 
 }
 
+.form-control-course {
+
+  height: 25px;
+  width: 305px;
+  outline: none;
+  border-color: #BB8BB9;
+  border-radius: 10px;
+  border-width: 5px;
+  border-style: solid;
+  background-color: white;
+  text-indent: 5px;
+  margin-top: 0px;
+
+}
+
 .round-header {
   display: flex;
   justify-content: center;
