@@ -13,12 +13,20 @@
   ],
   "rounds": [
     {
-      "roundDate": "2021-10-08",
+      "roundDate": "2021-10-01",
+      "userId": 1,
+      "courseId": 3,
+      "score": "66",
+      "reflection": "asd",
+      "id": 2
+    },
+    {
+      "roundDate": "2021-10-07",
       "userId": 2,
       "courseId": 3,
       "score": "97",
-      "reflection": "sad",
-      "id": 1
+      "reflection": "Bryan",
+      "id": 3
     }
   ],
   "courses": [

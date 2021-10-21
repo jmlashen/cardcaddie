@@ -29,6 +29,7 @@ export const RoundList = () => {
     }, [])
 
     return (
+        // when this first loads its loading an empty Array. It runs the return before the fetch call completes. The state varible is updated and then it rerenders. Two seperate renderings.
         <>
             <div className="round-header">
                 <h1>Rounds</h1>
@@ -39,7 +40,7 @@ export const RoundList = () => {
                     <div className="new-round-button-container">
                         <button className="new-round-button" type="button"
                             onClick={() => { history.push("/create") }}>
-                            Add New Round
+                            Add New Roundn
                         </button>
                     </div>
                 </div>
