@@ -1,3 +1,4 @@
+//Author: Jake, Purpose: If a user is logged in, then they can access the features
 
 import React, { useState } from "react"
 import { ApplicationViews } from "./ApplicationViews"

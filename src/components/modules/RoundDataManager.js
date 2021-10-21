@@ -1,13 +1,16 @@
+// Author: Jake, Purpose: To fetch data from the database
+
+
 const remoteURL = "http://localhost:8088"
 
 export const getAllRounds = () => {
-    return fetch(`${remoteURL}/rounds?_sort=timestamp&_order=desc`)
-    .then(res => res.json())
+    return fetch(`${remoteURL}/rounds?_sort=roundDate&_order=desc&_expand=course`)
+        .then(res => res.json())
 }
 export const getRoundById = (RoundId) => {
     return fetch(`${remoteURL}/rounds/${RoundId}`)
-    .then(response => response.json())
-    }
+        .then(response => response.json())
+}
 
 export const addRound = (newRound) => {
     return fetch(`${remoteURL}/rounds`, {
@@ -27,11 +30,11 @@ export const deleteRound = (id) => {
 }
 
 export const updateRound = (roundObj) => {
-	return fetch(`${remoteURL}/rounds/${roundObj.id}`, {
-		method: "PUT",
-		headers: {
-			"Content-Type": "application/json"
-		},
-		body: JSON.stringify(roundObj)
-	}).then(data => data.json());
+    return fetch(`${remoteURL}/rounds/${roundObj.id}`, {
+        method: "PUT",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify(roundObj)
+    }).then(data => data.json());
 }

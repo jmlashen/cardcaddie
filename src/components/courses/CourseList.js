@@ -1,3 +1,5 @@
+// Author: Jake, Purpose: To portray the Course cards in a list on the DOM
+
 import { CourseCard } from "./CoursesCard";
 import React, { useEffect, useState } from "react";
 import { GetAllCourses } from "../modules/CoursesDataManager";
@@ -16,7 +18,7 @@ export const CourseList = () => {
         });
     };
 
-    
+
     useEffect(() => {
         GetCourses();
     }, []);
@@ -24,19 +26,18 @@ export const CourseList = () => {
 
     return (
         <>
-        <div className="course-header">
-            <h1>Courses</h1>
+            <div className="course-header">
+                <h1>Courses</h1>
             </div>
-        
-        <div className="container-cards">
-          {courses.map(course =>
-            <CourseCard
-              key={course.id}
-              course={course}
-               />)}
-        </div>
-        </>
-      );
-          }
 
-          
+            <div className="container-cards">
+                {courses.map(course =>
+                    <CourseCard
+                        key={course.id}
+                        course={course}
+                    />)}
+            </div>
+        </>
+    );
+}
+

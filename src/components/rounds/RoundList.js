@@ -1,3 +1,5 @@
+// Author: Jake, Purpose: To portray the Round cards in a list on the DOM
+
 import React, { useEffect, useState } from "react";
 import { useHistory } from "react-router";
 import { RoundCard } from "./RoundCard";
@@ -6,7 +8,7 @@ import "./Round.css"
 
 export const RoundList = () => {
     const [rounds, setRounds] = useState([])
-    let user = sessionStorage.getItem("caddie_user")
+    let user = parseInt(sessionStorage.getItem("caddie_user"))
 
     const history = useHistory()
 
@@ -26,14 +28,11 @@ export const RoundList = () => {
         getRounds()
     }, [])
 
-
-
-
     return (
         <>
-        <div className="round-header">
-                    <h1>Rounds</h1>
-        </div>
+            <div className="round-header">
+                <h1>Rounds</h1>
+            </div>
             <section className="">
 
                 <div>
@@ -47,7 +46,7 @@ export const RoundList = () => {
 
                 <section className="">
                     <div className="round-cards-container">
-                        {rounds.map(round => <RoundCard round={round} key={round.id} handleDeleteRound={handleDeleteRound} />)}
+                        {rounds.filter(round => round.userId === user).map(round => <RoundCard round={round} key={round.id} handleDeleteRound={handleDeleteRound} />)}
                     </div>
                 </section>
             </section>
@@ -56,3 +55,4 @@ export const RoundList = () => {
     )
 
 }
+
