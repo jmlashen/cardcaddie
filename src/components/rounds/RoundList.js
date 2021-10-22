@@ -40,7 +40,7 @@ export const RoundList = () => {
                     <div className="new-round-button-container">
                         <button className="new-round-button" type="button"
                             onClick={() => { history.push("/create") }}>
-                            Add New Roundn
+                            Add New Round
                         </button>
                     </div>
                 </div>
