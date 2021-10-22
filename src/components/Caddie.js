@@ -2,7 +2,7 @@
 
 import React, { useState } from "react"
 import { ApplicationViews } from "./ApplicationViews"
-import { NavBar } from "./nav/NavBar"
+
 
 import "./Caddie.css"
 
@@ -23,8 +23,7 @@ export const Caddie = () => {
 
   return (
     <>
-      <NavBar clearUser={clearUser} isAuthenticated={isAuthenticated} />
-      <ApplicationViews setAuthUser={setAuthUser} isAuthenticated={isAuthenticated} />
+      <ApplicationViews setAuthUser={setAuthUser} isAuthenticated={isAuthenticated} clearUser={clearUser}  />
     </>
   )
 

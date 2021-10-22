@@ -15,10 +15,13 @@ import { RoundEditForm } from "./rounds/RoundEditForm"
 
 
 
-export const ApplicationViews = ({ isAuthenticated, setAuthUser }) => {
+export const ApplicationViews = ({ isAuthenticated, setAuthUser, clearUser }) => {
   const [show, setShow] = useState(false)
   return (
     <>
+      <Route path="/">
+        {isAuthenticated ? <NavBar clearUser={clearUser} isAuthenticated={isAuthenticated}/> : null}
+      </Route>
 
       <Route exact path="/:roundId(\d+)/edit">
         <RoundEditForm />
