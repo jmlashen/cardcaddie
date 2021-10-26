@@ -10,13 +10,13 @@ html body {
 }
 .form-control-reflection {
   height: 100px;
-  width: 300px;
+  width: 500px;
   outline: none;
-  border-color: #BB8BB9;
+  border-color: white;
   border-radius: 10px;
   border-width: 5px;
   border-style: solid;
-  background-color:white;
+  background-color:#dae2e2;
   border-radius: 10px;
   text-indent:10px;
   margin-top: 5px;
@@ -25,14 +25,14 @@ html body {
 
 
 .form-control-score {
-  height: 25px;
-  width: 300px;
+  height: 40px;
+  width: 500px;
   outline: none;
-  border-color: #BB8BB9;
+  border-color: white;
   border-radius: 10px;
   border-width: 5px;
   border-style: solid;
-  background-color: white;
+  background-color: #dae2e2;
   border-radius: 10px;
   text-indent:10px;
   margin-top: 5px;
@@ -40,31 +40,32 @@ html body {
 }
 
 .form-control-date {
-  height: 25px;
-  width: 305px;
+  height: 40px;
+  width: 500px;
   outline: none;
-  border-color: #BB8BB9;
+  border-color: white;
   border-radius: 10px;
   border-width: 5px;
   border-style: solid;
-  background-color: white;
+  background-color:#dae2e2;
   text-indent: 5px;
-  margin-top: 0px;
+  
 
 }
 
 .form-control-course {
 
-  height: 25px;
-  width: 305px;
+  height: 40px;
+  width: 500px;
   outline: none;
-  border-color: #BB8BB9;
+  border-color: white;
   border-radius: 10px;
   border-width: 5px;
   border-style: solid;
-  background-color: white;
+  background-color:#dae2e2;
+  margin-top: 5px;
   text-indent: 5px;
-  margin-top: 0px;
+  
 
 }
 
@@ -73,18 +74,23 @@ html body {
   justify-content: center;
   font-size: x-large;
   font-family: 'Fugaz One', cursive;
-  margin-top: 50px;
+  margin-top: 20px;
+  margin-bottom: 20px;
  
   
   
 }
 
+h1 {
+  font-family: 'Fugaz One', cursive;
+}
+
 .round-form {
-  border: oldlace;
+  /* border: oldlace;
   border-radius: 10px;
   background-color:#BFD9C0;
   width: 400px;
-  height: 350px;
+  height: 350px; */
   
 }
 
@@ -96,7 +102,7 @@ html body {
 	  margin: auto;
     margin: .5em;
     max-width: 800px;
-    min-height: 300px;
+    min-height: 400px;
     width: fit-content;
 	  background-image: linear-gradient( #BFD9C0,#8CBB8E,
 	  #BFD9C0);
@@ -144,7 +150,7 @@ html body {
   background-size:contain;
   background-position:center;
   background: cover;
-  border-radius: 500px;
+  border-radius: 500px !important;
   width: 150px;
   height: 150px;
   background-size: auto;
@@ -155,18 +161,26 @@ html body {
 
 button {
 
-  width: 200px;
+  width: 100px;
   height: 40px;
   border-style: solid;
   color: black;
-  background-color:#BB8BB9;
+  background-color:#dae2e2;
   border-width: 1px;
   font-size: 15px;
-  transition-duration: 0.4s;  
-  border-radius: 10px;
+  transition-duration: 0.4s !important;  
+  border-radius: 5px !important;
   border-width: 1px;
+}
+.button_contain {
+ 
+  margin-left: 400px;
   
+  
+}
 
+.button_contain_cancel {
+  margin-left: 400px;
 }
 
 .new-round-button {
@@ -191,7 +205,7 @@ button {
 
 
 button.accordion-button.collapsed {
-  background-color: #BB8BB0;
+  background-color: #dae2e2;
   border-collapse: none;
 }
 
