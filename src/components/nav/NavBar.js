@@ -3,6 +3,7 @@ import { Link } from "react-router-dom"
 import { useHistory } from "react-router"
 import "./NavBar.css"
 import { GetUser } from "./GetUser"
+import logo from "../../Images/logo.png"
 
 
 
@@ -25,46 +26,36 @@ export const NavBar = ({ clearUser, isAuthenticated }) => {
     <>
 
 
-      <nav className="navbar">
-      <section className="nav_links">
-        
-  
-        <div>
-          <ul>
-          {isAuthenticated ?
-        
-            <li className="nav-item">
-              <Link className="nav-link" to="/">Rounds</Link>
-            </li>
-            : null}
-          
-        </ul>
-    
-        <ul>
-          {isAuthenticated ?
-        
-            <li className="nav-item">
-              <Link className="nav-link" to="/courses">Courses</Link>
-            </li>
-            : null}
-          
-        </ul>
-        
-   
-        
- 
-        <ul>
-          {isAuthenticated ?
-            <li className="nav-item" >
-              <a className="nav-link" onClick={handleLogout} >Logout</a>
-            </li>
-            : null}
-          <GetUser />
-        </ul>
-    
+      <nav className="navbar"> 
       
-      </div>
-      </section>
+        <img className="logo_nav" src={logo} alt="card caddie logo"/>
+        
+          
+            {isAuthenticated ?
+              <li className="nav-item">
+                <Link className="nav-link" to="/">Rounds</Link>
+              </li> : null}
+          
+        
+        
+          
+            {isAuthenticated ?
+               <li className="nav-item">
+                <Link className="nav-link" to="/courses">Courses</Link>
+              </li> : null}
+        
+          
+          
+         
+            {isAuthenticated ?
+              <li className="nav-item">
+                <a className="nav-link" onClick={handleLogout} >Logout</a>
+              </li> : null}
+          
+          <div className="get">
+          <GetUser />
+          </div>
+
       </nav>
     </>
   )

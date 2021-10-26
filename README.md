@@ -24,10 +24,10 @@ Please visit me on LinkedIn to ask any questions you may have about my app.
 
 ### Project ERD Diagram
 
-![Project ERD](https://dbdiagram.io/d/61683e14940c4c4eec95c53a)
+[Project ERD](https://dbdiagram.io/d/61683e14940c4c4eec95c53a)
 
 
 ### Wireframe
 
-![Card Caddie Wireframe in Figma](https://www.figma.com/file/bSRLihpiWx5IbP0kPT9NlH/Card-Caddie?node-id=0%3A1)
+[Card Caddie Wireframe in Figma](https://www.figma.com/file/bSRLihpiWx5IbP0kPT9NlH/Card-Caddie?node-id=0%3A1)
 

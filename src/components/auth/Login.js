@@ -41,6 +41,7 @@ export const Login = ({ setAuthUser }) => {
     return (
 
         <main className="container--login">
+            <img className="logo_login" src={logo} alt="card caddie logo"/>
 
             <dialog className="dialog dialog--auth" open={existDialog}>
                 <div>
@@ -53,8 +54,8 @@ export const Login = ({ setAuthUser }) => {
 
             <section className="login">
                 <form className="form--login" onSubmit={handleLogin}>
-                    <div className="login_logo">
-                        <div>< img className="logo_image" src={logo} alt="card caddie logo" /></div>
+                    <div className="">
+                    
                     </div>
 
                     <fieldset>

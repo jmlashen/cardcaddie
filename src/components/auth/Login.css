@@ -1,8 +1,4 @@
-body {
-    background-color: #8CBB8E;
-   
-    
-}
+
 
 .dialog {
     min-width: 15rem;
@@ -34,19 +30,9 @@ body {
   align-items: center;
   flex-direction: column;
   
-  
  }
 
-.form-control {
-   height: 50px;
-   width: 300px;
-   outline: none;
-   border: none;
-   background-color: #BFD9C0;
-   border-radius: 10px;
-   text-indent:10px;
-   margin-top: -30px;
- }
+
 
 
 .sign-in-button {
@@ -65,20 +51,9 @@ body {
 
 .login_button_contatiner {
   display: flex;
-  justify-content: center;
 }
 
 
- .logo_image {
-    width: 700px;
- }
-
- .login_logo {
-   display: flex;
-   justify-content: center;
-   padding-top: 300px;
- }
- 
  .login {
    display: flex;
    flex-direction: column;
