@@ -5,6 +5,7 @@ import { useHistory } from "react-router";
 import { RoundCard } from "./RoundCard";
 import { getAllRounds, deleteRound } from "../modules/RoundDataManager";
 import "./Round.css"
+import { GetUser } from "../nav/GetUser";
 
 export const RoundList = () => {
     const [rounds, setRounds] = useState([])
@@ -31,7 +32,8 @@ export const RoundList = () => {
     return (
         // when this first loads its loading an empty Array. It runs the return before the fetch call completes. The state varible is updated and then it rerenders. Two seperate renderings.
         <>
-            <div className="round-header">
+        
+            <div className="round-h1">
                 <h1>Rounds</h1>
             </div>
             <section className="">

@@ -2,6 +2,7 @@
 
 import React, { useState } from "react"
 import { ApplicationViews } from "./ApplicationViews"
+import 'bootstrap/dist/css/bootstrap.min.css'
 
 
 import "./Caddie.css"

@@ -7,7 +7,7 @@ export const GetUser = () => {
 
     if (user) {
         return (
-            <div className="intro">
+            <div className="get_user">
                 <p>Welcome, {user}!</p>
             </div>
         )
