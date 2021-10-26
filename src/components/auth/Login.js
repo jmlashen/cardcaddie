@@ -1,7 +1,7 @@
 import React, { useState } from "react"
 import { Link, useHistory } from "react-router-dom";
 import "./Login.css"
-import logo from "../../Images/logo.png"
+import Logo2 from "../../Images/Logo2.png"
 
 
 export const Login = ({ setAuthUser }) => {
@@ -41,8 +41,9 @@ export const Login = ({ setAuthUser }) => {
     return (
 
         <main className="container--login">
-            <img className="logo_login" src={logo} alt="card caddie logo"/>
-
+            <div className="logo_login_contain">
+            <img className="logo_login" src={Logo2} alt="card caddie logo"/>
+            </div>
             <dialog className="dialog dialog--auth" open={existDialog}>
                 <div>
                     User does not exist
@@ -52,7 +53,8 @@ export const Login = ({ setAuthUser }) => {
                 </button>
             </dialog>
 
-            <section className="login">
+        <div className="login_contain">
+            <section>
                 <form className="form--login" onSubmit={handleLogin}>
                     <div className="">
                     
@@ -86,6 +88,7 @@ export const Login = ({ setAuthUser }) => {
                     </section>
                 </form>
             </section>
+        </div>
 
 
         </main>

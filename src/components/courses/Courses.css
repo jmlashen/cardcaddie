@@ -1,4 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Fugaz+One&family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fugaz+One&family=Righteous&display=swap');
+@import url(https://fonts.googleapis.com/css2?family=Fugaz+One&family=Righteous&family=Yanone+Kaffeesatz:wght@300&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Secular+One&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Secular+One&family=Urbanist:wght@100&display=swap);
 
 img {
     width: 195px;
@@ -8,15 +12,15 @@ img {
 	flex-wrap: wrap;
 	justify-content: space-evenly;
 	width: 70%;
-	
     margin: .5em;
-	max-width: 300px;
+	max-width: 350px;
 	background-image: linear-gradient( #BB8BB9
 	,#BFD9C0);
     border: white;
     border-radius: 10px;
     border-style: solid;
     text-align: center;
+    font-family: 'Secular One', sans-serif;
     
     
 }
@@ -27,7 +31,7 @@ img {
     margin-top: 20px;
     min-height: 500px;
     flex-wrap: wrap;
-    margin-left: 150px
+    margin-left: 230px
 
 }
 
@@ -36,8 +40,22 @@ img {
     justify-content: center;
     font-size: xx-large;
     font-family: 'Fugaz One', cursive;
+    margin-top: 20px;
+}
     
+    
+    
+
+
+.course_name {
+    margin-top: 50px;
 }
 
+h4 {
+    padding-top: 20px;
+}
 
+h6 {
+    padding-top: 10px;
+}
 

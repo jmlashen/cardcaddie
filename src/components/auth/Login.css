@@ -1,4 +1,7 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Fugaz+One&family=Righteous&display=swap');
+@import url(https://fonts.googleapis.com/css2?family=Fugaz+One&family=Righteous&family=Yanone+Kaffeesatz:wght@300&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Secular+One&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Secular+One&family=Urbanist:wght@100&display=swap);
 
 .dialog {
     min-width: 15rem;
@@ -16,6 +19,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    font-family: 'Fugaz One', cursive;
   
   }
 
@@ -29,7 +33,23 @@
   display: flex;
   align-items: center;
   flex-direction: column;
+  width: 500px;
+  border-color: black;
+  font-family: 'Secular One', sans-serif;
   
+ }
+
+
+
+ .logo_login {
+  width: 700px;
+  margin-top: 300px;
+ 
+ }
+
+ .logo_login_contain {
+   display: flex;
+   justify-content: center;
  }
 
 
@@ -46,16 +66,19 @@
   transition-duration: 0.4s;  
   border-radius: 10px;
   border-width: 1px;
+  font-family: 'Secular One', sans-serif;
   
 }
 
 .login_button_contatiner {
   display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 
- .login {
+ .login_contain {
    display: flex;
-   flex-direction: column;
    justify-content: center;
  }
