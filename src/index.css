@@ -1,9 +1,14 @@
 @import url(https://fonts.googleapis.com/css2?family=Secular+One&family=Urbanist:wght@100&display=swap);
 @import url(https://fonts.googleapis.com/css2?family=Secular+One&family=Urbanist:wght@100;300&display=swap);
+
 body {
     padding:0;
     margin: 0;
+   
+    
+    
 }
+
 ul {
     list-style-type: none; 
     padding: 0; 
@@ -24,3 +29,10 @@ ul {
       letter-spacing: 1px;
   }
  
+.modal-body {
+  background-color:#BB8BB9;
+}
+
+html, body {
+  overscroll-behavior: none;
+}

@@ -3,6 +3,9 @@
 @import url(https://fonts.googleapis.com/css2?family=Secular+One&display=swap);
 @import url(https://fonts.googleapis.com/css2?family=Secular+One&family=Urbanist:wght@100&display=swap);
 
+
+
+
 html body {
   background-color: #8CBB8E;
    
@@ -10,7 +13,7 @@ html body {
 }
 .form-control-reflection {
   height: 100px;
-  width: 500px;
+  width: 400px;
   outline: none;
   border-color: white;
   border-radius: 10px;
@@ -24,7 +27,7 @@ html body {
 
 .form-control-reflection-edit {
   height: 300px;
-  width: 500px;
+  width: 400px;
   outline: none;
   border-color: white;
   border-radius: 10px;
@@ -34,13 +37,16 @@ html body {
   border-radius: 10px;
   text-indent:10px;
   margin-top: 5px;
+  padding-left: 10px;
 }
 
-
+.create_round {
+  margin-left: 20px;
+}
 
 .form-control-score {
   height: 40px;
-  width: 500px;
+  width: 80px;
   outline: none;
   border-color: white;
   border-radius: 10px;
@@ -56,7 +62,7 @@ html body {
 
 .form-control-date {
   height: 40px;
-  width: 500px;
+  width: 150px;
   outline: none;
   border-color: white;
   border-radius: 10px;
@@ -72,14 +78,14 @@ html body {
 .form-control-course {
 
   height: 40px;
-  width: 500px;
+  width: 150px;
   outline: none;
   border-color: white;
   border-radius: 10px;
   border-width: 5px;
   border-style: solid;
   background-color:#dae2e2;
-  margin-top: 5px;
+  /* margin-top: 5px; */
   text-indent: 5px;
   margin-bottom: 5px;
   
@@ -89,13 +95,14 @@ html body {
 .round-h1{
   display: flex;
   justify-content: center;
-  
   font-family: 'Fugaz One', cursive;
   margin-top: 20px;
-  margin-bottom: 20px;
- 
   
-  
+}
+
+.round-h1-create-edit-header {
+  font-family: 'Fugaz One', cursive;
+
 }
 
 h1 {
@@ -142,7 +149,6 @@ h1 {
   margin-top: 50px;
   min-height: 500px;
   flex-wrap: wrap;
-  
   justify-content: center;
   
 }
@@ -172,6 +178,7 @@ h1 {
   background-size: auto;
   transition-duration: 10ms;
   -webkit-text-stroke-width: 1px;
+
 
 }
 
@@ -206,7 +213,7 @@ button {
 
 .new-round-button:hover {
   background-color: #4CAF50;
-  color:#BB8BB9;
+  color:#b576b3;
   
 }
 
@@ -272,7 +279,7 @@ button.accordion-button.collapsed {
 }
 
 .edittext {
-  width: 500px;
+  /* width: 500px; */
   
   font-family: 'Secular One', sans-serif;
     font-family: 'Urbanist', sans-serif;
@@ -290,11 +297,19 @@ button.accordion-button.collapsed {
 .edittext-background {
   background-color: #dae2e2;
   border-style: solid;
-  border-color: #BB8BB9 ;
+  border-color: white ;
   padding-left: 20px;
   padding-right: 20px;
   padding-top: 10px;
   margin-right: 20px;
+  margin-top: 50px;
   border-radius: 10px;
   border-width: 5px;
+  width: 300px;
+  margin-left: 30px;
+  
+}
+
+.primaryModal {
+  background-color: black;
 }

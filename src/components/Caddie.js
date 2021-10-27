@@ -3,9 +3,12 @@
 import React, { useState } from "react"
 import { ApplicationViews } from "./ApplicationViews"
 import 'bootstrap/dist/css/bootstrap.min.css'
+import { Route } from "react-router"
+
 
 
 import "./Caddie.css"
+import { Footer } from "./Footer/Footer"
 
 export const Caddie = () => {
 
@@ -25,6 +28,10 @@ export const Caddie = () => {
   return (
     <>
       <ApplicationViews setAuthUser={setAuthUser} isAuthenticated={isAuthenticated} clearUser={clearUser}  />
+      
+      <Route path="/">
+        {isAuthenticated ? <Footer clearUser={clearUser} isAuthenticated={isAuthenticated}/> : null}
+      </Route>
     </>
   )
 
