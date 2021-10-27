@@ -28,7 +28,7 @@
   }
 
 
- fieldset {
+ .login-fieldset {
   border: 0;
   display: flex;
   align-items: center;
@@ -44,6 +44,8 @@
  .logo_login {
   width: 700px;
   margin-top: 300px;
+  margin-bottom: -30px;
+  padding-left: 10px;
  
  }
 
@@ -81,4 +83,19 @@
  .login_contain {
    display: flex;
    justify-content: center;
+   
+ }
+
+ .form-control-login {
+  height: 40px;
+  width: 325px;
+  outline: none;
+  border-color: white;
+  border-radius: 10px;
+  border-width: 5px;
+  border-style: solid;
+  background-color: #dae2e2;
+  border-radius: 10px;
+  text-indent:10px;
+  margin-top: 30px;
  }

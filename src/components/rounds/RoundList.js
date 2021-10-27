@@ -6,6 +6,9 @@ import { RoundCard } from "./RoundCard";
 import { getAllRounds, deleteRound } from "../modules/RoundDataManager";
 import "./Round.css"
 import { GetUser } from "../nav/GetUser";
+import { RoundForm } from "./RoundForm";
+import { Modal, ModalHeader, ModalBody } from "reactstrap";
+
 
 export const RoundList = () => {
     const [rounds, setRounds] = useState([])
@@ -15,9 +18,18 @@ export const RoundList = () => {
 
     const getRounds = () => {
         return getAllRounds().then(response => {
-            setRounds(response)
-
+            setRounds(response)        
         })
+    }
+
+    const reloadForm = () => {
+        getRounds()
+    }
+
+    const [modal,setModal] =useState(false)
+
+    const toggle = () => {
+        setModal(!modal)
     }
 
     const handleDeleteRound = id => {
@@ -28,6 +40,7 @@ export const RoundList = () => {
     useEffect(() => {
         getRounds()
     }, [])
+
 
     return (
         // when this first loads its loading an empty Array. It runs the return before the fetch call completes. The state varible is updated and then it rerenders. Two seperate renderings.
@@ -41,7 +54,7 @@ export const RoundList = () => {
                 <div>
                     <div className="new-round-button-container">
                         <button className="new-round-button" type="button"
-                            onClick={() => { history.push("/create") }}>
+                            onClick={toggle}>
                             Add New Round
                         </button>
                     </div>
@@ -49,10 +62,17 @@ export const RoundList = () => {
 
                 <section className="">
                     <div className="round-cards-container">
-                        {rounds.filter(round => round.userId === user).map(round => <RoundCard round={round} key={round.id} handleDeleteRound={handleDeleteRound} />)}
+                        {rounds.filter(round => round.userId === user).map(round => <RoundCard reloadForm={reloadForm} round={round} key={round.id} handleDeleteRound={handleDeleteRound} />)}
                     </div>
                 </section>
             </section>
+
+            <Modal isOpen={modal} toggle={toggle}>
+                <ModalHeader toggle={toggle}>Create a Round</ModalHeader>
+                <ModalBody>
+                    <RoundForm reloadForm={reloadForm} toggle={toggle}/>
+                </ModalBody>
+            </Modal>
 
         </>
     )

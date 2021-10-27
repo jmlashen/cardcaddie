@@ -22,6 +22,20 @@ html body {
   margin-top: 5px;
 }
 
+.form-control-reflection-edit {
+  height: 300px;
+  width: 500px;
+  outline: none;
+  border-color: white;
+  border-radius: 10px;
+  border-width: 5px;
+  border-style: solid;
+  background-color:#dae2e2;
+  border-radius: 10px;
+  text-indent:10px;
+  margin-top: 5px;
+}
+
 
 
 .form-control-score {
@@ -36,6 +50,7 @@ html body {
   border-radius: 10px;
   text-indent:10px;
   margin-top: 5px;
+  margin-bottom: 5px;
 
 }
 
@@ -49,6 +64,7 @@ html body {
   border-style: solid;
   background-color:#dae2e2;
   text-indent: 5px;
+  margin-bottom: 5px;
   
 
 }
@@ -65,6 +81,7 @@ html body {
   background-color:#dae2e2;
   margin-top: 5px;
   text-indent: 5px;
+  margin-bottom: 5px;
   
 
 }
@@ -72,7 +89,7 @@ html body {
 .round-h1{
   display: flex;
   justify-content: center;
-  font-size: x-large;
+  
   font-family: 'Fugaz One', cursive;
   margin-top: 20px;
   margin-bottom: 20px;
@@ -86,11 +103,10 @@ h1 {
 }
 
 .round-form {
-  /* border: oldlace;
+  border: oldlace;
   border-radius: 10px;
-  background-color:#BFD9C0;
   width: 400px;
-  height: 350px; */
+  height: 350px;
   
 }
 
@@ -174,13 +190,13 @@ button {
 }
 .button_contain {
  
-  margin-left: 400px;
+  /* margin-left: 400px; */
   
-  
+  margin-top: 10px;
 }
 
 .button_contain_cancel {
-  margin-left: 400px;
+  /* margin-left: 400px; */
 }
 
 .new-round-button {
@@ -248,4 +264,37 @@ button.accordion-button.collapsed {
 
 }
 
-/* #BB8BB9 */
+.editform {
+  display: flex;
+  justify-content: center;
+  
+  
+}
+
+.edittext {
+  width: 500px;
+  
+  font-family: 'Secular One', sans-serif;
+    font-family: 'Urbanist', sans-serif;
+  
+}
+
+.edit-contain {
+  display: flex;
+  
+}
+.edit-contain-text {
+  display: flex;
+}
+
+.edittext-background {
+  background-color: #dae2e2;
+  border-style: solid;
+  border-color: #BB8BB9 ;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  margin-right: 20px;
+  border-radius: 10px;
+  border-width: 5px;
+}

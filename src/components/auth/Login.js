@@ -60,11 +60,11 @@ export const Login = ({ setAuthUser }) => {
                     
                     </div>
 
-                    <fieldset>
+                    <fieldset className="login_fieldset">
                         <label htmlFor="inputEmail"></label>
                         <input type="email"
                             id="email"
-                            className="form-control"
+                            className="form-control-login"
                             placeholder="Email address"
                             required autoFocus
                             value={loginUser.email}
