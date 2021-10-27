@@ -13,23 +13,44 @@
     font-family: 'Secular One', sans-serif;
     border-bottom: white;
     border-style: solid;
+    
 
     
     
 
 }
+
+
+
 
 a.nav-link {
     color:black;
+    /* background-color: #8CBB8E;
+    border-style: solid;
+    border-radius: 100px;
+    border-width: 5px;
+    padding-right: 100px;
+    padding-left: 100px; */
 }
-.nav-item {
-    
+a.nav-link:visited {
+    color: #dae2e2;
+}
+a:link {
+    color: black;
 }
 
 
 a.nav-link:hover {
     color: white
 }
+
+.nav-item {
+   
+    
+    
+}
+
+
 
 
 .nav_links_center {
@@ -38,6 +59,7 @@ a.nav-link:hover {
 
 .get{
     padding-right: 20px;
+    
 }
 
 .nav_links {
@@ -45,6 +67,7 @@ a.nav-link:hover {
   display: flex;
   justify-content: space-between;
   font-family: 'Secular One', sans-serif; 
+  
   
   
    
@@ -68,7 +91,10 @@ a.nav-link:hover {
 }
 .logo_nav {
     width: 500px;
-    margin-left: -50px;
+    /* margin-left: -50px;
+    margin-top: 200px;
+    padding-right: 300px;
+    margin-bottom: -50px; */
 }
 
 .logo_image_nav {
@@ -83,5 +109,6 @@ a.nav-link:hover {
 }
 
 .get_user {
-    padding-top: 10px;
+    /* padding-top: 10px;
+    margin-top: 200px; */
 }
