@@ -82,7 +82,7 @@ export const Login = ({ setAuthUser }) => {
                         <div className="register">
                             <div className="not-signed-in"><h6>not signed up?</h6></div>
                             <div>
-                                <Link to="/register"><h6>Register for an account</h6></Link>
+                                <Link to="/register"><h6 className="register-link">Register for an account</h6></Link>
                             </div>
                         </div>
                     </section>

@@ -14,8 +14,8 @@ img {
 	width: 70%;
     margin: .5em;
 	max-width: 350px;
-	background-image: linear-gradient( #BB8BB9
-	,#BFD9C0);
+	background-image: linear-gradient( #BFD9C0,#8CBB8E,
+    #BFD9C0);
     border: white;
     border-radius: 10px;
     border-style: solid;
@@ -58,4 +58,9 @@ h4 {
 h6 {
     padding-top: 10px;
 }
-
+.course_link {
+    color:black;
+}
+.course_link:hover {
+    color:#BB8BB9;
+}

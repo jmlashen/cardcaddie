@@ -9,7 +9,7 @@ export const CourseCard = ({ course }) => (
             <h4 className="course__name">{course?.name}</h4>
             <picture><img src={require(`../../Images/${course.image}`).default} alt="" /></picture>
             <h6 className="course__description">{course.description}</h6>
-            <h6 className="course__url" ><a href={course.url} target="_blank">Course Website</a></h6>
+            <h6 className="course__url" ><a className="course_link" href={course.url} target="_blank">Course Website</a></h6>
         </div>
     </section>
 )

@@ -1,5 +1,6 @@
 // Author: Jake, Purpose: To give the user the ability to post a new Round
 
+import Dropdown from "@restart/ui/esm/Dropdown";
 import React, { useEffect, useState } from "react";
 import { useHistory } from "react-router";
 import { GetAllCourses } from "../modules/CoursesDataManager";
@@ -58,24 +59,27 @@ export const RoundForm = ({toggle, reloadForm}) => {
             .then(reloadForm)
     }
 
-    
+    // Dropdown
+    // selectOnBlur={false}
+    // selection
+    // placeholder={'No Auto Select...'}
+    // options={[{key: 0, text: 'abc', value: 'abc'}, {key: 1, text: 'xyz', value: 'xyz'}]}
 
 
     return (
         <div className="round-form-container">
+            
             <form className="round-form">
+                
                 <fieldset>
-                    <h1 className="create_round">Create a Round</h1>
-                    <div>
-                        <label htmlFor="round date">Date:</label>
-                        <input className="form-control-date" type="date" id="roundDate" onChange={handleControlleInputChange} placeholder="Round Date" value={round.round_date} />
-                    </div>
-
+                
+                
                     <fieldset>
+                    <h1 className="round-h1-create-edit-header">Create a Round</h1>
                         <div>
-                            <label htmlFor="course">Course:</label>
+                            <label htmlFor="course"></label>
                             <select value={round.courseId} name="courseId" id="courseId" onChange={handleControlleInputChange} className="form-control-course" >
-                                <option value="0"></option>
+                                <option value="0">Course</option>
                                 {courses.map(course => (
                                     <option key={course.id} value={course.id}>
                                         {course.name}
@@ -86,12 +90,19 @@ export const RoundForm = ({toggle, reloadForm}) => {
                     </fieldset>
 
                     <div className="">
-                        <label htmlFor="score">Score:</label>
+                        <label htmlFor="score"></label>
                         <input className="form-control-score" type="text" id="score" onChange={handleControlleInputChange} placeholder="Score" value={round.score} />
                     </div>
 
                     <div>
-                        <label htmlFor="reflection">Reflection</label>
+                        <label htmlFor="round date"></label>
+                        <input className="form-control-date" type="date" id="roundDate" onChange={handleControlleInputChange} placeholder="Round Date" value={round.round_date} />
+                    </div>
+
+
+
+                    <div>
+                        <label htmlFor="reflection"></label>
                         <textarea className="form-control-reflection" type="text" id="reflection" onChange={handleControlleInputChange} placeholder="Reflection" value={round.refelction} />
                     </div>
                     <div className="button_contain">

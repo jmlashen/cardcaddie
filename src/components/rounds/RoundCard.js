@@ -28,6 +28,7 @@ export const RoundCard = ({ round, handleDeleteRound, reloadForm }) => {
      
         <>
             <div>
+                
                 <section className="round-cards">
                     <div className="round-card-width">
                         <h6>Date</h6><p>{readableDate}</p>
@@ -52,8 +53,8 @@ export const RoundCard = ({ round, handleDeleteRound, reloadForm }) => {
                     </div>
                 </section>
             </div>
-            <Modal isOpen={editModal} toggleEdit={toggleEdit}>
-                <ModalHeader toggleEdit={toggleEdit}>Create a Round</ModalHeader>
+            <Modal size="lg" isOpen={editModal} toggleEdit={toggleEdit}>
+                {/* <ModalHeader toggleEdit={toggleEdit}></ModalHeader> */}
                 <ModalBody>
                     <RoundEditForm round={round} reloadForm={reloadForm} toggleEdit={toggleEdit}/>
                 </ModalBody>

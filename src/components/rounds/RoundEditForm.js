@@ -67,19 +67,12 @@ export const RoundEditForm = ({reloadForm, toggleEdit, round}) => {
 
     return (
         <>
-        <h1 className="round-h1">Edit a Round</h1>
+        
            
                 <form className="editform">
-                <div className="edittext-background">
-                <section className="edittext">
-                    <div>{readableDate} </div>
-                    <div>{rounds.score}</div>
-                    <div>{rounds.reflection}</div>
-                    <div>{rounds.course}</div>
-                </section>
-                </div>
+               
                     <fieldset>
-                        
+                    <h1 className="round-h1-create">Edit a Round</h1>
                         <div>
                             <label htmlFor="roundDate"></label>
                             <input type="date" id="roundDate" onChange={handleFieldChange} className="form-control-date" placeholder="Round Date" value={rounds.roundDate} />
@@ -114,6 +107,14 @@ export const RoundEditForm = ({reloadForm, toggleEdit, round}) => {
                             <button onClick={handleCancel}> Cancel </button>
                         </div>
                     </fieldset>
+                    <div className="edittext-background">
+                <section className="edittext">
+                    <div>{readableDate} </div>
+                    <div>{rounds.score}</div>
+                    <div>{rounds.reflection}</div>
+                    <div>{rounds.course}</div>
+                </section>
+                </div>
 
                     
                 </form>
