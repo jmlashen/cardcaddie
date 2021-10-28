@@ -47,6 +47,7 @@ export const RoundEditForm = ({reloadForm, toggleEdit, round}) => {
             score: rounds.score,
             reflection: rounds.reflection,
             userId: rounds.userId
+            // image: image ? image : courses.image
         }
 
         updateRound(editedRound)

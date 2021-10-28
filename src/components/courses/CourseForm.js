@@ -82,7 +82,7 @@ export const CourseForm = ({ toggle, reloadCourseList }) => {
 
                     <div>
                         <label htmlFor="course date"></label>
-                        <input className="form-control-date" type="file" id="image" onChange={(event) => {uploadImage(event)}} placeholder="image" />
+                        <input className="" type="file" id="image" onChange={(event) => {uploadImage(event)}} placeholder="image" />
                     </div>
 
 

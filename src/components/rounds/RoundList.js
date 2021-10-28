@@ -5,7 +5,6 @@ import { useHistory } from "react-router";
 import { RoundCard } from "./RoundCard";
 import { getAllRounds, deleteRound } from "../modules/RoundDataManager";
 import "./Round.css"
-import { GetUser } from "../nav/GetUser";
 import { RoundForm } from "./RoundForm";
 import { Modal, ModalBody, } from "reactstrap";
 

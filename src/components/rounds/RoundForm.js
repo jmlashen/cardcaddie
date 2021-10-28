@@ -1,6 +1,4 @@
 // Author: Jake, Purpose: To give the user the ability to post a new Round
-
-import Dropdown from "@restart/ui/esm/Dropdown";
 import React, { useEffect, useState } from "react";
 import { useHistory } from "react-router";
 import { GetAllCourses } from "../modules/CoursesDataManager";

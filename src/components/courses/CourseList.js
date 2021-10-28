@@ -2,7 +2,7 @@
 
 import { CourseCard } from "./CoursesCard";
 import React, { useEffect, useState } from "react";
-import { GetAllCourses } from "../modules/CoursesDataManager";
+import { GetAllCourses, deleteCourse } from "../modules/CoursesDataManager";
 import { Modal, ModalBody, } from "reactstrap";
 import { CourseForm } from "./CourseForm";
 
@@ -30,6 +30,11 @@ export const CourseList = () => {
         setModal(!modal)
     }
 
+    const handleDeleteCourse = id => {
+        deleteCourse(id)
+            .then(() => GetAllCourses().then(setCourses))
+    }
+
     useEffect(() => {
         GetCourses();
     }, []);
@@ -42,14 +47,6 @@ export const CourseList = () => {
                 <h1>Courses</h1>
             </div>
 
-            <div className="container-cards">
-                {courses.map(course =>
-                    <CourseCard
-                        key={course.id}
-                        course={course}
-                    />)}
-            </div>
-
             <div>
                 <div className="new-course-button-container">
                     <button className="new-course-button" type="button"
@@ -59,6 +56,10 @@ export const CourseList = () => {
                 </div>
             </div>
 
+            <div className="container-cards">
+                {courses.map(course =><CourseCard reloadCourseList={reloadCourseList} key={course.id} course={course} handleDeleteCourse={handleDeleteCourse} />)}
+            </div>
+        
             <Modal isOpen={modal} toggle={toggle} >
                 {/* <ModalHeader  toggle={toggle}></ModalHeader> */}
                 <ModalBody>

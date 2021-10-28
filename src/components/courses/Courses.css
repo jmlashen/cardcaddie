@@ -21,6 +21,7 @@ img {
     border-style: solid;
     text-align: center;
     font-family: 'Secular One', sans-serif;
+    height: 400px;
     
     
 }
@@ -65,3 +66,28 @@ h6 {
 .course_link:hover {
     color:#BB8BB9;
 }
+
+.new-course-button-container {
+    display: flex;
+    justify-content: center;
+}
+
+.new-course-button {
+    width: 200px;
+    height: 40px;
+    font-size: 15px;
+    background-image:url(https://images.vexels.com/media/users/3/214738/isolated/lists/2f51c418f0fd9a580efe692401c3c25a-golf-ball-illustration.png);
+    background-size: 110px !important;
+    background-position:center;
+    background: cover;
+    border-radius: 500px !important;
+    width: 120px;
+    height: 120px;
+    background-size: auto;
+    transition-duration: 10ms;
+}
+
+.new-course-button {
+    transition-duration: 0.4s;
+    box-shadow: 5px 10px;
+  }
