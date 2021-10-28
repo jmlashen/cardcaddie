@@ -21,6 +21,120 @@
       "id": 4
     }
   ],
-  "rounds": [],
-  "courses": []
+  "rounds": [
+    {
+      "roundDate": "2020-06-07",
+      "userId": 1,
+      "courseId": 8,
+      "score": "101",
+      "reflection": "First time at this course. Played with Jordan. Greens are very fast. Planning on coming back. This was the round the head came off my nine iron. ",
+      "id": 1
+    },
+    {
+      "roundDate": "2020-07-05",
+      "userId": 1,
+      "courseId": 8,
+      "score": "103",
+      "reflection": "Second time here. Played 36 holes and this is the score of the first round. Played with Jordan and had a blast playing all day! ",
+      "id": 2
+    },
+    {
+      "roundDate": "2021-06-18",
+      "userId": 1,
+      "courseId": 2,
+      "score": "91",
+      "reflection": "I was tired of playing the same courses around Nashville, so I decided to take a trip to a course off the beaten path. The clubhouse was beautiful and the range was really nice. I played this round by myself for the first nine holes and paired up with a twosome for the back nine. I was so close to breaking 90 and missed the putt off the green by inches on the last par 4 making a bogey. Great round!",
+      "id": 3
+    },
+    {
+      "roundDate": "2020-05-02",
+      "userId": 1,
+      "courseId": 6,
+      "score": "100",
+      "reflection": "First time out at Montgomery Bell and WOW what a beautiful course nestled in a state park. Jordan and I played this round together and it was definitely worth the drive! There was wildlife (deer) on almost every hole and I will most certainly be back!",
+      "id": 4
+    }
+  ],
+  "courses": [
+    {
+      "name": "Two Rivers",
+      "image": "https://res.cloudinary.com/djnk0ey5p/image/upload/v1635449695/rucqkjilkzhx1gmaknpr.jpg",
+      "url": "https://www.nashville.gov/departments/parks/golf-courses/two-rivers-golf-course",
+      "description": "Municipal Public Course",
+      "userId": 1,
+      "id": 1
+    },
+    {
+      "name": "Pine Creek",
+      "image": "https://res.cloudinary.com/djnk0ey5p/image/upload/v1635449871/urliay03somt2qsnaqfc.jpg",
+      "url": "https://www.pinecreekgolf.net/",
+      "description": "Public Course",
+      "userId": 1,
+      "id": 2
+    },
+    {
+      "id": 3,
+      "name": "Twelve Stones",
+      "image": "https://res.cloudinary.com/djnk0ey5p/image/upload/v1635450082/witp7gqg0hui3ks1alrk.jpg",
+      "url": "https://www.twelvestonesgolfclub.com/",
+      "description": "Public Course",
+      "userId": 1
+    },
+    {
+      "name": "Franklin Bridge",
+      "image": "https://res.cloudinary.com/djnk0ey5p/image/upload/v1635450593/hvcztdtbjksd5qwv1h6o.jpg",
+      "url": "https://franklinbridgegolf.com/",
+      "description": "Public Course",
+      "userId": 1,
+      "id": 4
+    },
+    {
+      "name": "Harpeth Hills",
+      "image": "https://res.cloudinary.com/djnk0ey5p/image/upload/v1635450751/ywlx0bhylyy5cuyogqkk.jpg",
+      "url": "https://www.nashville.gov/departments/parks/golf-courses/harpeth-hills-golf-course\"",
+      "description": "Municipal Public Course",
+      "userId": 1,
+      "id": 5
+    },
+    {
+      "name": "Montgomery Bell",
+      "image": "https://res.cloudinary.com/djnk0ey5p/image/upload/v1635450926/grtk0ljvxlie4py6pocw.jpg",
+      "url": "https://tnstateparks.com/golf/course/montgomery-bell",
+      "description": "Tennessee Golf Trail/Tennessee State Park",
+      "userId": 1,
+      "id": 6
+    },
+    {
+      "id": 7,
+      "name": "Hermitage",
+      "image": "https://res.cloudinary.com/djnk0ey5p/image/upload/v1635451148/e64n0wurox4kmyhp2vgt.jpg",
+      "url": "https://www.hermitagegolf.com/president-s-reserve",
+      "description": "(President's Reserve) Public Course",
+      "userId": 1
+    },
+    {
+      "name": "Henry Horton",
+      "image": "https://res.cloudinary.com/djnk0ey5p/image/upload/v1635451247/r2sf1v7m5do05bvjzgip.jpg",
+      "url": "https://tnstateparks.com/golf/course/henry-horton",
+      "description": "Tennessee Golf Trail/Tennessee State Park",
+      "userId": 1,
+      "id": 8
+    },
+    {
+      "name": "GreyStone",
+      "image": "https://res.cloudinary.com/djnk0ey5p/image/upload/v1635451405/xwp9wagoe82p35yi20hp.jpg",
+      "url": "https://www.greystonegc.com",
+      "description": "Public Course",
+      "userId": 1,
+      "id": 9
+    },
+    {
+      "name": "McCabe",
+      "image": "https://res.cloudinary.com/djnk0ey5p/image/upload/v1635451576/bfgt5bwo0xvkfojqrrvr.jpg",
+      "url": "https://www.nashville.gov/departments/parks/golf-courses/mccabe-golf-course",
+      "description": "Municipal Public Course",
+      "userId": 1,
+      "id": 10
+    }
+  ]
 }
