@@ -59,12 +59,6 @@ export const RoundForm = ({toggle, reloadForm}) => {
             .then(reloadForm)
     }
 
-    // Dropdown
-    // selectOnBlur={false}
-    // selection
-    // placeholder={'No Auto Select...'}
-    // options={[{key: 0, text: 'abc', value: 'abc'}, {key: 1, text: 'xyz', value: 'xyz'}]}
-
 
     return (
         <div className="round-form-container">

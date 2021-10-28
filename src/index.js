@@ -8,11 +8,11 @@ import { Caddie } from './components/Caddie';
 
 
 ReactDOM.render(
-  <React.StrictMode>
+  <React.Fragment>
     <Router>
       <Caddie />
     </Router>
-  </React.StrictMode>,
+  </React.Fragment>,
   document.getElementById('root')
 );
 

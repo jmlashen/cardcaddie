@@ -53,10 +53,10 @@ export const RoundCard = ({ round, handleDeleteRound, reloadForm }) => {
                     </div>
                 </section>
             </div>
-            <Modal isOpen={editModal} toggleEdit={toggleEdit}>
-                <ModalHeader toggleEdit={toggleEdit}></ModalHeader>
+            <Modal isOpen={editModal} toggle={toggleEdit}>
+                <ModalHeader toggle={toggleEdit}></ModalHeader>
                 <ModalBody>
-                    <RoundEditForm round={round} reloadForm={reloadForm} toggleEdit={toggleEdit}/>
+                    <RoundEditForm key={round.id} round={round} reloadForm={reloadForm} toggleEdit={toggleEdit}/>
                 </ModalBody>
             </Modal>
         </>

@@ -3,6 +3,8 @@
 import { CourseCard } from "./CoursesCard";
 import React, { useEffect, useState } from "react";
 import { GetAllCourses } from "../modules/CoursesDataManager";
+import { Modal, ModalBody, } from "reactstrap";
+import { CourseForm } from "./CourseForm";
 
 
 
@@ -18,10 +20,20 @@ export const CourseList = () => {
         });
     };
 
+    const [modal, setModal] = useState(false)
+
+    const reloadCourseList = () => {
+        GetCourses()
+    }
+
+    const toggle = () => {
+        setModal(!modal)
+    }
 
     useEffect(() => {
         GetCourses();
     }, []);
+
 
 
     return (
@@ -37,6 +49,23 @@ export const CourseList = () => {
                         course={course}
                     />)}
             </div>
+
+            <div>
+                <div className="new-course-button-container">
+                    <button className="new-course-button" type="button"
+                        onClick={toggle}>
+                        + add Course
+                    </button>
+                </div>
+            </div>
+
+            <Modal isOpen={modal} toggle={toggle} >
+                {/* <ModalHeader  toggle={toggle}></ModalHeader> */}
+                <ModalBody>
+                    <CourseForm reloadCourseList={reloadCourseList} toggle={toggle} />
+                </ModalBody>
+            </Modal>
+
         </>
     );
 }
