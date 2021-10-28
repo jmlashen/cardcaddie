@@ -69,7 +69,7 @@ export const RoundList = () => {
                 </section>
             </section>
 
-            <Modal  isOpen={modal} toggle={toggle} dialogClassName={"primaryModal"}>
+            <Modal  isOpen={modal} toggle={toggle} >
                 {/* <ModalHeader  toggle={toggle}></ModalHeader> */}
                 <ModalBody>
                     <RoundForm reloadForm={reloadForm} toggle={toggle}/>

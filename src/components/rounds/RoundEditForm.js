@@ -1,18 +1,27 @@
 //Author: Jake, Purpose: To allow the user to edit an Article
 import React, { useState, useEffect } from "react"
 import { getRoundById, updateRound } from "../modules/RoundDataManager"
-import { useParams, useHistory } from "react-router"
 import "./Round.css"
 import { GetAllCourses } from "../modules/CoursesDataManager"
 
 
 
 export const RoundEditForm = ({reloadForm, toggleEdit, round}) => {
-    const [rounds, setRounds] = useState({ roundDate: "", score: "", reflection: "", courseId: 0 })
+   
+
+    const [rounds, setRounds] = useState({ 
+        
+        roundDate: "", 
+        score: "", 
+        reflection: "", 
+        courseId: 0,
+      
+
+    })
+
     const [isLoading, setIsLoading] = useState(false)
 
     const roundId = round.id
-    const history = useHistory()
     const [courses, setCourses] = useState([])
     // USESTATE: useState is a Hook that allows you to have state variables in 
     // functional components. You pass the initial state to the
@@ -21,14 +30,11 @@ export const RoundEditForm = ({reloadForm, toggleEdit, round}) => {
     // to update this value.
 
     const handleFieldChange = event => {
-        const stateToChange = { ...round }
+        const stateToChange = { ...rounds }
         stateToChange[event.target.id] = event.target.value;
         setRounds(stateToChange)
     }
 
-    const handleCancel = () => {
-        history.push("/")
-    }
 
     const updateExistingRound = event => {
         event.preventDefault()
@@ -83,9 +89,9 @@ export const RoundEditForm = ({reloadForm, toggleEdit, round}) => {
                                 <label htmlFor="course"></label>
                                 <select value={rounds.courseId} name="courseId" id="courseId" onChange={handleFieldChange} className="form-control-course" >
                                     <option value="0"></option>
-                                    {courses.map(course => (
-                                        <option key={course.id} value={course.id}>
-                                            {course.name}
+                                    {courses.map(c => (
+                                        <option key={c.id} value={c.id}>
+                                            {c.name}
                                         </option>
                                     ))}
                                 </select>
@@ -104,7 +110,7 @@ export const RoundEditForm = ({reloadForm, toggleEdit, round}) => {
 
                         <div >
                             <button type="button" disabled={isLoading} onClick={updateExistingRound}>Update</button>
-                            <button onClick={handleCancel}> Cancel </button>
+                            
                         </div>
                     </fieldset>
                     <div className="edittext-background">

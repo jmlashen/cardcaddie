@@ -13,3 +13,12 @@ export const GetAllCourses = () => {
     .then(res => res.json())
 }
 
+export const addCourse = (newCourse) => {
+  return fetch(`${remoteURL}/courses`, {
+      method: "POST",
+      headers: {
+          "Content-Type": "application/json"
+      },
+      body: JSON.stringify(newCourse)
+  }).then(response => response.json())
+}

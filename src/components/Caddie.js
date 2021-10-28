@@ -17,6 +17,7 @@ export const Caddie = () => {
   const setAuthUser = (user) => {
     sessionStorage.setItem("caddie_user", user.id)
     sessionStorage.setItem("caddie_username", user.name)
+    sessionStorage.setItem("caddie_image", user.image)
     setIsAuthenticated(sessionStorage.getItem("caddie_user") !== null)
   }
 
