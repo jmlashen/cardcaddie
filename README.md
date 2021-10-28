@@ -1,6 +1,6 @@
 # Card Caddie (Personalized Golf Journal) Capstone Project
 
-**Card Caddie** is an app designed for Beatles Fans to organize their daily tasks, interesting events, news article, friends, and chat messages. 
+**Card Caddie** is an app designed for golfers to save their scores and reflections from a round of golf. 
 
 ## Setup
 

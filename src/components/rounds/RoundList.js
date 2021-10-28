@@ -7,7 +7,7 @@ import { getAllRounds, deleteRound } from "../modules/RoundDataManager";
 import "./Round.css"
 import { GetUser } from "../nav/GetUser";
 import { RoundForm } from "./RoundForm";
-import { Modal, ModalHeader, ModalBody, } from "reactstrap";
+import { Modal, ModalBody, } from "reactstrap";
 
 
 
@@ -49,7 +49,7 @@ export const RoundList = () => {
         <>
         
             <div className="round-h1">
-                <h1>Rounds</h1>
+                <h1>My Rounds</h1>
             </div>
             <section className="">
 
@@ -57,7 +57,7 @@ export const RoundList = () => {
                     <div className="new-round-button-container">
                         <button className="new-round-button" type="button"
                             onClick={toggle}>
-                            Add New Round
+                            + add round
                         </button>
                     </div>
                 </div>
@@ -69,7 +69,7 @@ export const RoundList = () => {
                 </section>
             </section>
 
-            <Modal isOpen={modal} toggle={toggle} dialogClassName={"primaryModal"}>
+            <Modal  isOpen={modal} toggle={toggle} dialogClassName={"primaryModal"}>
                 {/* <ModalHeader  toggle={toggle}></ModalHeader> */}
                 <ModalBody>
                     <RoundForm reloadForm={reloadForm} toggle={toggle}/>

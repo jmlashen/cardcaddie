@@ -36,3 +36,8 @@ ul {
 html, body {
   overscroll-behavior: none;
 }
+
+button:hover {
+  background-color:#cd9ccb !important; 
+  transition-duration: 0.4s !important;
+}
