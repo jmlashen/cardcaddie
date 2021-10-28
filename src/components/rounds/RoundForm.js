@@ -75,7 +75,8 @@ export const RoundForm = ({toggle, reloadForm}) => {
                 
                 
                     <fieldset>
-                    <h1 className="round-h1-create-edit-header">Create a Round</h1>
+                    <h4 className="round-h1-create-edit-header">New Round</h4>
+                    {/* <p>What course? What did you shoot? When did you play? Don't forget to give some details in the reflection.</p> */}
                         <div>
                             <label htmlFor="course"></label>
                             <select value={round.courseId} name="courseId" id="courseId" onChange={handleControlleInputChange} className="form-control-course" >

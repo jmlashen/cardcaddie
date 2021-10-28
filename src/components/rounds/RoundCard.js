@@ -53,8 +53,8 @@ export const RoundCard = ({ round, handleDeleteRound, reloadForm }) => {
                     </div>
                 </section>
             </div>
-            <Modal size="lg" isOpen={editModal} toggleEdit={toggleEdit}>
-                {/* <ModalHeader toggleEdit={toggleEdit}></ModalHeader> */}
+            <Modal isOpen={editModal} toggleEdit={toggleEdit}>
+                <ModalHeader toggleEdit={toggleEdit}></ModalHeader>
                 <ModalBody>
                     <RoundEditForm round={round} reloadForm={reloadForm} toggleEdit={toggleEdit}/>
                 </ModalBody>

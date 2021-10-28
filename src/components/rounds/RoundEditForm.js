@@ -72,7 +72,7 @@ export const RoundEditForm = ({reloadForm, toggleEdit, round}) => {
                 <form className="editform">
                
                     <fieldset>
-                    <h1 className="round-h1-create">Edit a Round</h1>
+                    <h1 className="round-h1-create">Edit Round</h1>
                         <div>
                             <label htmlFor="roundDate"></label>
                             <input type="date" id="roundDate" onChange={handleFieldChange} className="form-control-date" placeholder="Round Date" value={rounds.roundDate} />
