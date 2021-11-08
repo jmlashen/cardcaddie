@@ -11,7 +11,7 @@ export const Footer = () => {
         <>
 
             <footer>
-
+            </footer>
                 <div className="footer-container">
                 
                 <div >
@@ -39,7 +39,7 @@ export const Footer = () => {
 
 
 
-            </footer>
+           
 
         </>
     )
