@@ -2,7 +2,7 @@
 import React from "react"
 import { Link } from "react-router-dom"
 import "./Footer.css"
-import footerimg from "../../Images/footerimg.jpg"
+import footerimg from "../../Images/jake.jpeg"
 
 
 
@@ -10,22 +10,36 @@ export const Footer = () => {
     return (
         <>
 
-            <div className="">
+            <footer>
 
-                <picture>
-                    <Link to="/">
-                        <img className="footerimg" src={footerimg} alt="footer image" />
-                    </Link>
-                </picture>
+                <div className="footer-container">
+                
+                <div >
+                <p className="footer-header">&copy;Card Caddie 2021</p>
 
-                <div className="footer-header">
-                    <h6>Contact the Developer</h6>
-                    <p>Jake Lashenik</p>
-                    
-                    
                 </div>
 
+               
+
+                <div>    
+                    <p className="footer-info-jake">developed by: Jake Lashenik | Nashville Software School | Cohort 51</p>
+                </div>
+
+                <div className="jakemove">
+                
+                <Link to="/">
+                    <img className="jake" src={footerimg} alt="footer image" />
+                </Link>
+           
             </div>
+                </div>
+        
+                
+
+
+
+
+            </footer>
 
         </>
     )

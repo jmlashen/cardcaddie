@@ -21,7 +21,7 @@ export const CourseCard = ({ course, handleDeleteCourse, reloadCourseList }) => 
         <>
             
 
-            <Modal size="xl" isOpen={editModal} toggle={toggleEdit}>
+            <Modal isOpen={editModal} toggle={toggleEdit}>
                 <ModalHeader toggle={toggleEdit}></ModalHeader>
                 <ModalBody>
                     <CourseEditForm key={course.id} course={course} reloadCourseList={reloadCourseList} toggleEdit={toggleEdit} />
@@ -32,15 +32,18 @@ export const CourseCard = ({ course, handleDeleteCourse, reloadCourseList }) => 
             <section className="course">
                 <div>
                     <h4 className="course__name">{course.name}</h4>
-                    <div><img src={course.image} alt="" /></div>
+                    <div><img className="courseimages" src={course.image} alt="" /></div>
                     <h6 className="course__description">{course.description}</h6>
                     <h6 className="course__url" ><a className="course_link" href={course.url} target="_blank">Course Website</a></h6>
                     {course.userId === user ? <div className="round-buttons">
+               
+               <div className="editroundcontainer">
                 <button className="round_edit" type="button"
                     onClick={toggleEdit}>
                     Edit
                 </button>
                 <button className="course_delete" onClick={() => handleDeleteCourse(course.id)}>Delete</button>
+                </div>
             </div> : null}
                 </div>
             </section>

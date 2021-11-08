@@ -1,6 +1,9 @@
 import React, { useState } from "react";
 import { addCourse } from "../modules/CoursesDataManager";
 import "./Courses.css"
+import { useHistory } from "react-router";
+
+
 
 
 
@@ -20,7 +23,7 @@ export const CourseForm = ({ toggle, reloadCourseList }) => {
 
     })
 
- 
+    const history = useHistory()
 
     const handleControlledInputChange = (event) => {
         event.preventDefault()
@@ -32,6 +35,10 @@ export const CourseForm = ({ toggle, reloadCourseList }) => {
         }
         newCourse[event.target.id] = selectedVal
         setCourses(newCourse)
+    }
+
+    const handleCancelButton = () => {
+        history.push("/courses")
     }
 
     const handleClickSaveCourse = (event) => {
@@ -73,27 +80,28 @@ export const CourseForm = ({ toggle, reloadCourseList }) => {
             <form className="course-form">
 
                 <fieldset>
+                <h1 className="">New Course</h1>
 
 
                     <div className="">
-                        <label htmlFor="score"></label>
-                        <input className="form-control-score" type="text" id="name" onChange={handleControlledInputChange} placeholder="name" value={courses.name} />
+                        <label htmlFor="score">Course Name:</label>
+                        <input className="form-control-coursename" type="text" id="name" onChange={handleControlledInputChange} placeholder="name" value={courses.name} />
                     </div>
 
                     <div>
-                        <label htmlFor="course date"></label>
+                        <label htmlFor="course date">Upload Course Image:</label>
                         <input className="" type="file" id="image" onChange={(event) => {uploadImage(event)}} placeholder="image" />
                     </div>
 
 
 
                     <div>
-                        <label htmlFor="reflection"></label>
+                        <label htmlFor="reflection">Course Link:</label>
                         <textarea className="form-control-reflection" type="text" id="url" onChange={handleControlledInputChange} placeholder="link" value={courses.url} />
                     </div>
 
                     <div>
-                        <label htmlFor="reflection"></label>
+                        <label htmlFor="reflection">Course Description:</label>
                         <textarea className="form-control-reflection" type="text" id="description" onChange={handleControlledInputChange} placeholder="description" value={courses.description} />
                     </div>
 
@@ -110,6 +118,11 @@ export const CourseForm = ({ toggle, reloadCourseList }) => {
                                     onClick={handleClickSaveCourse}>
                                     Save
                                 </button>
+
+                                <button 
+                            onClick={handleCancelButton}>
+                            Cancel
+                        </button>
 
                             </>)}
                     </div>

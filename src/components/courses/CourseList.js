@@ -3,7 +3,7 @@
 import { CourseCard } from "./CoursesCard";
 import React, { useEffect, useState } from "react";
 import { GetAllCourses, deleteCourse } from "../modules/CoursesDataManager";
-import { Modal, ModalBody, } from "reactstrap";
+import { Modal, ModalBody, ModalHeader } from "reactstrap";
 import { CourseForm } from "./CourseForm";
 
 
@@ -51,7 +51,7 @@ export const CourseList = () => {
                 <div className="new-course-button-container">
                     <button className="new-course-button" type="button"
                         onClick={toggle}>
-                        + add Course
+                        +course
                     </button>
                 </div>
             </div>

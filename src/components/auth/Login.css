@@ -2,6 +2,7 @@
 @import url(https://fonts.googleapis.com/css2?family=Fugaz+One&family=Righteous&family=Yanone+Kaffeesatz:wght@300&display=swap);
 @import url(https://fonts.googleapis.com/css2?family=Secular+One&display=swap);
 @import url(https://fonts.googleapis.com/css2?family=Secular+One&family=Urbanist:wght@100&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,500&display=swap);
 
 .dialog {
     min-width: 15rem;
@@ -19,7 +20,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    font-family: 'Fugaz One', cursive;
+    font-family: 'Josefin Sans', sans-serif;
   
   }
 
@@ -38,6 +39,34 @@
   font-family: 'Secular One', sans-serif;
   
  }
+
+ .form-control-register {
+  border-width: 1px;
+  border-radius: 10px;
+  width: 500px;
+  height: 40px;
+  border-color: black;
+  text-indent: 10px;
+  
+  
+ }
+ .form-control-register-second {
+
+  padding-top: 25px;
+ 
+  
+ }
+ .form-control-register-third {
+
+  padding-top: 25px;
+  
+  
+  
+ }
+ .form--login-register {
+   margin-top: 300px;
+ }
+ 
 
 
 
@@ -61,7 +90,7 @@
   width: 150px;
   height: 40px;
   border-style: solid;
-  color: black;
+  color:white;
   background-color:#BB8BB9;
   border-width: 1px;
   font-size: 15px;
@@ -80,6 +109,23 @@
   margin-right: 170px;
 }
 
+.button-reg {
+  margin-top: 30px;
+ 
+  margin-right: 178px;
+  
+  
+}
+
+.sign-in-button{
+ margin-right: 10px;
+ 
+  
+}
+
+.sign-in-button-contain-cancel {
+
+}
 
  .login_contain {
    display: flex;
@@ -91,12 +137,16 @@
   height: 40px;
   width: 325px;
   outline: none;
-  border-color: white;
+  border-radius: 10px;
+  border-width: 0;
+  
+
+  /* border-color: white;
   border-radius: 10px;
   border-width: 5px;
   border-style: solid;
   background-color: #dae2e2;
-  border-radius: 10px;
+  border-radius: 10px; */
   text-indent:10px;
   margin-top: 30px;
  }

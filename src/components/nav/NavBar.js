@@ -32,25 +32,25 @@ export const NavBar = ({ clearUser, isAuthenticated }) => {
         
           
             {isAuthenticated ?
-              <h6 className="nav-item">
+              <h2 className="nav-item">
                 <Link className="nav-link" to="/">Rounds</Link>
-              </h6> : null}
+              </h2> : null}
           
         
         
           
             {isAuthenticated ?
-               <h6 className="nav-item">
+               <h2 className="nav-item">
                 <Link className="nav-link" to="/courses">Courses</Link>
-              </h6> : null}
+              </h2> : null}
         
           
           
          
             {isAuthenticated ?
-              <h6 className="nav-item">
+              <h2 className="nav-item">
                 <a className="nav-link" onClick={handleLogout} >Logout</a>
-              </h6> : null}
+              </h2> : null}
           
           <div className="get">
           <GetUser />

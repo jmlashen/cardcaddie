@@ -41,7 +41,6 @@ export const CourseEditForm = ({ reloadCourseList, toggleEdit, course }) => {
     const updateExistingCourse = event => {
         event.preventDefault()
         setIsLoading(true)
-       debugger
         const editedCourse = {
             id: courses.id,
             name: courses.name,
@@ -103,22 +102,23 @@ export const CourseEditForm = ({ reloadCourseList, toggleEdit, course }) => {
                 <fieldset>
                     <h1 className="course-h1-create">Edit Course</h1>
                     <div>
-                        <label htmlFor="courseName"></label>
-                        <input type="text" id="name" onChange={handleFieldChange} className="form-control-course-name" placeholder="name" value={courses.name} />
+                        <label htmlFor="courseName">Course Name:</label>
+                        <input type="text" id="name" onChange={handleFieldChange} className="form-control-coursename" placeholder="name" value={courses.name} />
                     </div>
 
                     <div>
                         <label htmlFor="course image"></label>
                         <input className="" type="file" id="image" onChange={(event) => { uploadImage(event) }} placeholder="image" />
                     </div>
+                    <img className="mainImage" src={image} />
 
                     <div>
-                        <label htmlFor="url"></label>
+                        <label htmlFor="url">Course Link:</label>
                         <textarea className="form-control-reflection" type="text" id="url" onChange={handleFieldChange} placeholder="link" value={courses.url} />
                     </div>
 
                     <div>
-                        <label htmlFor="description"></label>
+                        <label htmlFor="description">Course Description:</label>
                         <textarea className="form-control-reflection" type="text" id="description" onChange={handleFieldChange} placeholder="description" value={courses.description} />
                     </div>
 
@@ -127,27 +127,26 @@ export const CourseEditForm = ({ reloadCourseList, toggleEdit, course }) => {
                             <h4 style={{ marginTop: 20 }}>Loading...</h4>
                         ) : (
                             <>
-                                <img className="mainImage" src={image} />
-
-
-                                <button className=""
+                             <button className=""
                                     disabled={isLoading}
                                     onClick={updateExistingCourse}>
-                                    Edit
+                                    Update
                                 </button>
+
+                               
 
                             </>)}
                     </div>
 
                 </fieldset>
-                <div className="edittext-background">
+                {/* <div className="edittext-background">
                     <section className="edittext">
                         <div>{courses.name} </div>
                         <div>{image ? image : courses.image}</div>
                         <div>{courses.url} </div>
                         <div>{courses.description}</div>
                     </section>
-                </div>
+                </div> */}
 
 
             </form>

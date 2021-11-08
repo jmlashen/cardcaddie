@@ -67,10 +67,10 @@ export const RoundForm = ({toggle, reloadForm}) => {
                 
                 
                     <fieldset>
-                    <h4 className="round-h1-create-edit-header">New Round</h4>
+                    <h1 className="round-h1-create-coursename">New Round</h1>
                     {/* <p>What course? What did you shoot? When did you play? Don't forget to give some details in the reflection.</p> */}
                         <div>
-                            <label htmlFor="course"></label>
+                            <label htmlFor="course"><h6>Select Course</h6></label>
                             <select value={round.courseId} name="courseId" id="courseId" onChange={handleControlleInputChange} className="form-control-course" >
                                 <option value="0">Course</option>
                                 {courses.map(course => (
@@ -83,19 +83,19 @@ export const RoundForm = ({toggle, reloadForm}) => {
                     </fieldset>
 
                     <div className="">
-                        <label htmlFor="score"></label>
+                        <label htmlFor="score">Score:</label>
                         <input className="form-control-score" type="text" id="score" onChange={handleControlleInputChange} placeholder="Score" value={round.score} />
                     </div>
 
                     <div>
-                        <label htmlFor="round date"></label>
+                        <label htmlFor="round date">Date:</label>
                         <input className="form-control-date" type="date" id="roundDate" onChange={handleControlleInputChange} placeholder="Round Date" value={round.round_date} />
                     </div>
 
 
 
                     <div>
-                        <label htmlFor="reflection"></label>
+                        <label htmlFor="reflection">Round Reflection:</label>
                         <textarea className="form-control-reflection" type="text" id="reflection" onChange={handleControlleInputChange} placeholder="Reflection" value={round.refelction} />
                     </div>
                     <div className="button_contain">
