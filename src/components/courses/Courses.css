@@ -3,9 +3,25 @@
 @import url(https://fonts.googleapis.com/css2?family=Fugaz+One&family=Righteous&family=Yanone+Kaffeesatz:wght@300&display=swap);
 @import url(https://fonts.googleapis.com/css2?family=Secular+One&display=swap);
 @import url(https://fonts.googleapis.com/css2?family=Secular+One&family=Urbanist:wght@100&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,500&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&display=swap);
 
 img {
     width: 195px;
+}
+.form-control-coursename {
+    height: 40px;
+    width: 400px;
+    outline: none;
+    border-color: white;
+    border-radius: 10px;
+    border-width: 5px;
+    border-style: solid;
+    background-color: #dae2e2;
+    border-radius: 10px;
+    text-indent:10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 .course {
     display: flex;
@@ -20,10 +36,19 @@ img {
     border-radius: 10px;
     border-style: solid;
     text-align: center;
-    font-family: 'Secular One', sans-serif;
+    /* font-family: 'Secular One', sans-serif; */
+    /* font-family: 'Josefin Sans', sans-serif; */
+    font-family: 'Josefin Sans', sans-serif;
     height: 400px;
+    box-shadow: 0px 5px 8px black;
     
     
+    
+}
+
+
+button.course_delete {
+    margin-left: 5px;
 }
 
 .container-cards {
@@ -34,15 +59,17 @@ img {
     flex-wrap: wrap;
     /* margin-left: 90px */
     justify-content: center;
+   padding-top: 30px;
 
 }
 
 .course-header {
     display: flex;
     justify-content: center;
-    font-size: xx-large;
+    
     font-family: 'Fugaz One', cursive;
     margin-top: 20px;
+    margin-bottom: 20px;
 }
     
     
@@ -67,6 +94,10 @@ h6 {
     color:#BB8BB9;
 }
 
+.course__description{
+    padding-top: 20px;
+}
+
 .new-course-button-container {
     display: flex;
     justify-content: center;
@@ -75,7 +106,7 @@ h6 {
 .new-course-button {
     width: 200px;
     height: 40px;
-    font-size: 15px;
+    font-size: 25px;
     background-image:url(https://images.vexels.com/media/users/3/214738/isolated/lists/2f51c418f0fd9a580efe692401c3c25a-golf-ball-illustration.png);
     background-size: 110px !important;
     background-position:center;
@@ -85,9 +116,13 @@ h6 {
     height: 120px;
     background-size: auto;
     transition-duration: 10ms;
+    font-family: 'Josefin Sans', sans-serif;
+    
 }
 
 .new-course-button {
     transition-duration: 0.4s;
     box-shadow: 5px 10px;
+    box-shadow: 10px 10px 10px black;
+    
   }

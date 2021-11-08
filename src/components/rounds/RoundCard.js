@@ -31,7 +31,7 @@ export const RoundCard = ({ round, handleDeleteRound, reloadForm }) => {
                 
                 <section className="round-cards">
                     <div className="round-card-width">
-                        <h6>Date</h6><p>{readableDate}</p>
+                        <h6>Date:</h6><p>{readableDate}</p>
                         <h6>Course:</h6> <p>{round.course?.name}</p>
                         <h6>Score:</h6> <p>{round.score}</p>
 

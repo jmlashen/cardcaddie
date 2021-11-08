@@ -9,6 +9,11 @@ body {
     
 }
 
+html {
+  background-image: white;
+  
+}
+
 ul {
     list-style-type: none; 
     padding: 0; 
@@ -31,6 +36,8 @@ ul {
  
 .modal-body {
   background-color:#BB8BB9;
+  background-image: linear-gradient(#BB8BB9,#b768b4);
+ 
 }
 
 html, body {

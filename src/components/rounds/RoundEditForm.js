@@ -81,13 +81,13 @@ export const RoundEditForm = ({reloadForm, toggleEdit, round}) => {
                     <fieldset>
                     <h1 className="round-h1-create">Edit Round</h1>
                         <div>
-                            <label htmlFor="roundDate"></label>
+                            <label htmlFor="roundDate"><h6>Round Date:</h6></label>
                             <input type="date" id="roundDate" onChange={handleFieldChange} className="form-control-date" placeholder="Round Date" value={rounds.roundDate} />
                         </div>
 
                         <fieldset>
                             <div>
-                                <label htmlFor="course"></label>
+                                <label htmlFor="course"><h6>Course:</h6></label>
                                 <select value={rounds.courseId} name="courseId" id="courseId" onChange={handleFieldChange} className="form-control-course" >
                                     <option value="0"></option>
                                     {courses.map(c => (
@@ -100,12 +100,12 @@ export const RoundEditForm = ({reloadForm, toggleEdit, round}) => {
                         </fieldset>
 
                         <div>
-                            <label htmlFor="score"></label>
+                            <label htmlFor="score"><h6>Score:</h6></label>
                             <input type="text" id="score" onChange={handleFieldChange} className="form-control-score" placeholder="Score" value={rounds.score} />
                         </div>
 
                         <div>
-                            <label htmlFor="reflection"></label>
+                            <label htmlFor="reflection"><h6>Round Reflection:</h6></label>
                             <textarea type="text" id="reflection" onChange={handleFieldChange} className="form-control-reflection-edit" placeholder="Reflection" value={rounds.reflection} />
                         </div>
 
@@ -114,14 +114,14 @@ export const RoundEditForm = ({reloadForm, toggleEdit, round}) => {
                             
                         </div>
                     </fieldset>
-                    <div className="edittext-background">
+                    {/* <div className="edittext-background">
                 <section className="edittext">
                     <div>{readableDate} </div>
                     <div>{rounds.score}</div>
                     <div>{rounds.reflection}</div>
                     <div>{rounds.course}</div>
                 </section>
-                </div>
+                </div> */}
 
                     
                 </form>

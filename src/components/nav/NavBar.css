@@ -1,16 +1,38 @@
 @import url(https://fonts.googleapis.com/css2?family=Secular+One&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Secular+One&family=Tangerine:wght@700&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap);
+
 
 
 .navbar {
     background-image: linear-gradient(#bbb,#fff);
-    font-family: 'Secular One', sans-serif;
-    border-bottom: white;
-    height: 150px;
+    /* font-family: 'Secular One', sans-serif; */
+    /* font-family: 'Secular One', sans-serif;
+    font-family: 'Tangerine', cursive; */
+    font-family: 'Dancing Script', cursive;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    /* border-style:solid ; */
+
+    border-radius: 10px;
+    border-width: 3px;
+    /* border-color: #cd6aca; */
+    height: 100px;
+    box-shadow: 0px 0px 10px black;
+    
+    
 
 }
 
 
-
+.courseimages {
+    border-style: solid;
+    border-color: white;
+    border-radius: 20px;
+    border-width: 1px;
+    box-shadow: 0px 2px 8px black;
+}
 
 a.nav-link {
     color:black;
@@ -44,18 +66,22 @@ a.nav-link:hover {
   display: flex;
   justify-content: space-between;
   font-family: 'Secular One', sans-serif; 
+  
+
     
 }
 .nav_links_user {
 
 }
 .logo_nav {
-    width: 500px;
+    width: 400px;
     padding-right: 50px;
+
 }
 
 .logo_image_nav {
    width: 500px;
+  
 
    
 }
