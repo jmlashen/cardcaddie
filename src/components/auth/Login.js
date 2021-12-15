@@ -19,7 +19,7 @@ export const Login = ({ setAuthUser }) => {
 
     const existingUserCheck = () => {
 
-        return fetch(`http://localhost:8088/users?email=${loginUser.email}`)
+        return fetch(`https://card-caddie-api.herokuapp.com/users?email=${loginUser.email}`)
             .then(res => res.json())
             .then(user => user.length ? user[0] : false)
     }

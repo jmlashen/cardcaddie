@@ -1,6 +1,6 @@
 // Author: Jake, Purpose: To fetch data from the database
 
-const remoteURL = "http://localhost:8088"
+const remoteURL = "https://card-caddie-api.herokuapp.com/"
 
 export const getCourseById = (courseId) => {
   return fetch(`${remoteURL}/courses/${courseId}`)
