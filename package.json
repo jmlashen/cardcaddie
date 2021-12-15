@@ -2,6 +2,8 @@
   "name": "card_caddie",
   "version": "0.1.0",
   "private": true,
+  "description": "This app helps golfers keep track of their scores as well as reflections from the rounds and the courses they play.",
+  "author": "Jake Lashenik",
   "dependencies": {
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^11.2.7",

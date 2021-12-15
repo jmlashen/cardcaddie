@@ -17,7 +17,7 @@ export const Register = ({ setAuthUser }) => {
     }
 
     const existingUserCheck = () => {
-        return fetch(`http://localhost:8088/users?email=${registerUser.email}`)
+        return fetch(`https://card-caddie-api.herokuapp.com/users?email=${registerUser.email}`)
             .then(res => res.json())
             .then(user => !!user.length)
     }
@@ -32,7 +32,7 @@ export const Register = ({ setAuthUser }) => {
         existingUserCheck()
             .then((userExists) => {
                 if (!userExists) {
-                    fetch("http://localhost:8088/users", {
+                    fetch("https://card-caddie-api.herokuapp.com/users", {
                         method: "POST",
                         headers: {
                             "Content-Type": "application/json"
