@@ -18,7 +18,6 @@ export const RoundList = () => {
     const history = useHistory()
 
     const getRounds = () => {
-        debugger
         return getAllRounds().then(response => {
             setRounds(response)        
         })

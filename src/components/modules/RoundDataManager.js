@@ -1,7 +1,7 @@
 // Author: Jake, Purpose: To fetch data from the database
 
 
-const remoteURL = "https://card-caddie-api.herokuapp.com/"
+const remoteURL = "https://card-caddie-api.herokuapp.com"
 
 export const getAllRounds = () => {
     return fetch(`${remoteURL}/rounds?_sort=roundDate&_order=desc&_expand=course`)
