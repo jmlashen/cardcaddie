@@ -17,7 +17,7 @@ export const Register = ({ setAuthUser }) => {
     }
 
     const existingUserCheck = () => {
-        return fetch(`users?email=${registerUser.email}`)
+        return fetch(`https://card-caddie-api.herokuapp.com/users?email=${registerUser.email}`)
             .then(res => res.json())
             .then(user => !!user.length)
     }
